@@ -135,7 +135,7 @@ const HomePage = () => {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             {/* Profile Section - With Real Photo */}
-            <div className="mb-10">
+            {/* <div className="mb-10">
               <div className="relative w-40 h-40 mx-auto mb-6 group hover:scale-105 transition-transform duration-300">
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-400 via-purple-400 to-teal-400 rounded-full p-1 shadow-2xl">
                   <div className="w-full h-full rounded-full bg-white flex items-center justify-center overflow-hidden">
@@ -146,6 +146,21 @@ const HomePage = () => {
                     />
                   </div>
                 </div>
+              </div>
+            </div> */}
+            {/* Profile Section - Ready for Real Photo */}
+            <div className="mb-10">
+              <div className="relative w-40 h-40 mx-auto mb-6">
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-400 via-purple-400 to-teal-400 rounded-full p-1 shadow-2xl">
+                  <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
+                    <div className="w-32 h-32 rounded-full bg-gradient-to-r from-blue-600 via-purple-600 to-teal-600 flex items-center justify-center shadow-inner">
+                      <span className="text-3xl font-bold text-white">AP</span>
+                    </div>
+                  </div>
+                </div>
+                {/* <div className="absolute -top-2 -right-2 w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center shadow-lg">
+                  <Star className="h-4 w-4 text-yellow-800 fill-current" />
+                </div> */}
               </div>
             </div>
             

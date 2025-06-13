@@ -72,7 +72,7 @@ const ContactPage = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900">Phone</h3>
-                    <p className="text-gray-600 text-lg">(617) 555-0123</p>
+                    <p className="text-gray-600 text-lg">(978) 916-3958</p>
                     <p className="text-sm text-gray-500">Available 7 days a week</p>
                     <p className="text-sm text-blue-600 font-medium">Call or text anytime!</p>
                   </div>
@@ -84,7 +84,7 @@ const ContactPage = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900">Email</h3>
-                    <p className="text-gray-600">aditya@marealestate.com</p>
+                    <p className="text-gray-600">adipatel@fathomrealty.com</p>
                     <p className="text-sm text-gray-500">Response within 2 hours</p>
                     <p className="text-sm text-blue-600 font-medium">Usually much faster!</p>
                   </div>
@@ -121,14 +121,14 @@ const ContactPage = () => {
               {/* Quick Contact Buttons */}
               <div className="mt-8 space-y-3">
                 <a
-                  href="tel:(617)555-0123"
+                  href="tel:(978)916-3958"
                   className="w-full bg-blue-600 text-white py-3 px-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors flex items-center justify-center space-x-2"
                 >
                   <Phone className="h-5 w-5" />
                   <span>Call Aditya Now</span>
                 </a>
                 <a
-                  href="mailto:aditya@marealestate.com"
+                  href="mailto:adipatel@fathomrealty.com"
                   className="w-full bg-teal-600 text-white py-3 px-4 rounded-lg font-semibold hover:bg-teal-700 transition-colors flex items-center justify-center space-x-2"
                 >
                   <Mail className="h-5 w-5" />
@@ -204,13 +204,13 @@ const ContactPage = () => {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 justify-center">
                   <a
-                    href="tel:(617)555-0123"
+                    href="tel:(978)916-3958"
                     className="bg-white text-blue-600 px-6 py-2 rounded-lg font-semibold hover:bg-blue-50 transition-colors"
                   >
-                    Call Now: (617) 555-0123
+                    Call Now: (978) 916-3958
                   </a>
                   <a
-                    href="mailto:aditya@marealestate.com"
+                    href="mailto:adipatel@fathomrealty.com"
                     className="border-2 border-white text-white px-6 py-2 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors"
                   >
                     Send Email

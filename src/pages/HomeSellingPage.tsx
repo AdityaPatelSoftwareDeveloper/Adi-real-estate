@@ -355,13 +355,13 @@ const HomeSellingPage = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="tel:(617)555-0123"
+              href="tel:(978)916-3958"
               className="bg-white text-teal-600 px-8 py-3 rounded-lg font-semibold text-lg hover:bg-teal-50 transition-colors"
             >
-              Call Aditya: (617) 555-0123
+              Call Aditya: (978) 916-3958
             </a>
             <a
-              href="mailto:aditya@marealestate.com"
+              href="mailto:adipatel@fathomrealty.com"
               className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold text-lg hover:bg-white hover:text-teal-600 transition-colors"
             >
               Email for Free Market Analysis

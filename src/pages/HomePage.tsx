@@ -126,26 +126,25 @@ const HomePage = () => {
         </div>
         
         {/* Floating Elements */}
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        {/* <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute top-20 left-10 w-2 h-2 bg-white rounded-full opacity-60 animate-ping animation-delay-1000"></div>
           <div className="absolute top-40 right-20 w-1 h-1 bg-blue-300 rounded-full opacity-80 animate-ping animation-delay-3000"></div>
           <div className="absolute bottom-32 left-1/4 w-1.5 h-1.5 bg-teal-300 rounded-full opacity-70 animate-ping animation-delay-5000"></div>
-        </div>
+        </div> */}
         
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            {/* Profile Section - Ready for Real Photo */}
+            {/* Profile Section - With Real Photo */}
             <div className="mb-10">
-              <div className="relative w-40 h-40 mx-auto mb-6">
+              <div className="relative w-40 h-40 mx-auto mb-6 group hover:scale-105 transition-transform duration-300">
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-400 via-purple-400 to-teal-400 rounded-full p-1 shadow-2xl">
-                  <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
-                    <div className="w-32 h-32 rounded-full bg-gradient-to-r from-blue-600 via-purple-600 to-teal-600 flex items-center justify-center shadow-inner">
-                      <span className="text-3xl font-bold text-white">AP</span>
-                    </div>
+                  <div className="w-full h-full rounded-full bg-white flex items-center justify-center overflow-hidden">
+                    <img
+                      src="/assets/Adi3.png"
+                      alt="Aditya Patel"
+                      className="w-32 h-32 rounded-full object-cover shadow-inner"
+                    />
                   </div>
-                </div>
-                <div className="absolute -top-2 -right-2 w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center shadow-lg">
-                  <Star className="h-4 w-4 text-yellow-800 fill-current" />
                 </div>
               </div>
             </div>
@@ -203,13 +202,13 @@ const HomePage = () => {
               <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-4 border border-white border-opacity-20">
                 <div className="flex items-center justify-center space-x-3">
                   <Phone className="h-5 w-5 text-blue-300" />
-                  <span className="text-blue-200 font-medium">(617) 555-0123</span>
+                  <span className="text-blue-200 font-medium">(978) 916-3958</span>
                 </div>
               </div>
               <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-4 border border-white border-opacity-20">
                 <div className="flex items-center justify-center space-x-3">
                   <Mail className="h-5 w-5 text-blue-300" />
-                  <span className="text-blue-200 font-medium">aditya@marealestate.com</span>
+                  <span className="text-blue-200 font-medium">adipatel@fathomrealty.com</span>
                 </div>
               </div>
               <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-4 border border-white border-opacity-20">
@@ -273,53 +272,6 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Achievements Section with Realistic Content */}
-      <section className="py-24 bg-gray-50 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-gray-50 via-blue-50 to-gray-50"></div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-20">
-            <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-8">
-              Why Aditya is <span className="bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent">Massachusetts' Choice</span>
-            </h2>
-            <p className="text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-              When you work with me, you're not just getting an agent – you're getting a dedicated partner 
-              who understands the Massachusetts market inside and out.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-20">
-            {achievements.map((achievement, index) => (
-              <div key={index} className="group relative">
-                <div className="absolute inset-0 bg-gradient-to-r opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl blur-xl"></div>
-                <div className="relative bg-white rounded-3xl p-10 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 border border-gray-100">
-                  <div className="text-center">
-                    <div className={`w-24 h-24 bg-gradient-to-r ${achievement.gradient} rounded-3xl flex items-center justify-center mx-auto mb-8 shadow-lg group-hover:scale-110 transition-transform duration-500`}>
-                      {achievement.icon}
-                    </div>
-                    <div className="text-4xl font-bold text-gray-900 mb-4">{achievement.number}</div>
-                    <h3 className="text-2xl font-semibold text-gray-900 mb-4">{achievement.title}</h3>
-                    <p className="text-gray-600 text-lg leading-relaxed">{achievement.description}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <div className="bg-gradient-to-r from-blue-600 via-purple-600 to-teal-600 rounded-3xl p-10 text-white shadow-2xl">
-            <div className="text-center">
-              <h3 className="text-4xl font-bold mb-6">Aditya's Promise to You</h3>
-              <p className="text-2xl mb-6 text-blue-100 max-w-5xl mx-auto leading-relaxed">
-                "I believe that buying or selling a home should be an exciting journey, not a stressful ordeal. 
-                That's why I've created this comprehensive guide and why I'm personally committed to being your 
-                trusted advisor throughout the entire process."
-              </p>
-              <p className="text-3xl font-semibold text-white mb-2">Your success is my success.</p>
-              <p className="text-blue-200 font-medium text-xl">- Aditya Patel, Fathom Realty</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Services Section with Enhanced Design */}
       <section className="py-24 bg-white relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-white via-blue-50 to-white"></div>
@@ -376,6 +328,53 @@ const HomePage = () => {
         </div>
       </section>
 
+      {/* Achievements Section with Realistic Content */}
+      <section className="py-24 bg-gray-50 relative overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-br from-gray-50 via-blue-50 to-gray-50"></div>
+            <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              {/* <div className="text-center mb-20">
+                <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-8">
+                  Why Aditya is <span className="bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent">Massachusetts' Choice</span>
+                </h2>
+                <p className="text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+                  When you work with me, you're not just getting an agent – you're getting a dedicated partner 
+                  who understands the Massachusetts market inside and out.
+                </p>
+              </div> */}
+
+              {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-20">
+                {achievements.map((achievement, index) => (
+                  <div key={index} className="group relative">
+                    <div className="absolute inset-0 bg-gradient-to-r opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl blur-xl"></div>
+                    <div className="relative bg-white rounded-3xl p-10 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 border border-gray-100">
+                      <div className="text-center">
+                        <div className={`w-24 h-24 bg-gradient-to-r ${achievement.gradient} rounded-3xl flex items-center justify-center mx-auto mb-8 shadow-lg group-hover:scale-110 transition-transform duration-500`}>
+                          {achievement.icon}
+                        </div>
+                        <div className="text-4xl font-bold text-gray-900 mb-4">{achievement.number}</div>
+                        <h3 className="text-2xl font-semibold text-gray-900 mb-4">{achievement.title}</h3>
+                        <p className="text-gray-600 text-lg leading-relaxed">{achievement.description}</p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div> */}
+
+              <div className="bg-gradient-to-r from-blue-600 via-purple-600 to-teal-600 rounded-3xl p-10 text-white shadow-2xl">
+                <div className="text-center">
+                  {/* <h3 className="text-4xl font-bold mb-6">Aditya's Promise to You</h3> */}
+                  <p className="text-2xl mb-6 text-blue-100 max-w-5xl mx-auto leading-relaxed">
+                    "I believe that buying or selling a home should be an exciting journey, not a stressful ordeal. 
+                    That's why I've created this comprehensive guide and why I'm personally committed to being your 
+                    trusted advisor throughout the entire process."
+                  </p>
+                  <p className="text-3xl font-semibold text-white mb-2">Your success is my success.</p>
+                  <p className="text-blue-200 font-medium text-xl">- Aditya Patel, Fathom Realty</p>
+                </div>
+              </div>
+            </div>
+      </section>
+
       {/* Testimonials with Enhanced Design */}
 
       {/* Enhanced Call to Action */}
@@ -403,10 +402,10 @@ const HomePage = () => {
               <ArrowRight className="ml-3 h-6 w-6 group-hover:translate-x-2 transition-transform duration-500" />
             </Link>
             <a
-              href="tel:(617)555-0123"
+              href="tel:(978)916-3958"
               className="group border-3 border-white text-white px-12 py-5 rounded-2xl font-semibold text-xl hover:bg-white hover:text-gray-900 transition-all duration-500 inline-flex items-center justify-center shadow-2xl hover:shadow-3xl transform hover:-translate-y-2"
             >
-              Call Now: (617) 555-0123
+              Call Now: (978) 916-3958
               <Phone className="ml-3 h-6 w-6" />
             </a>
           </div>
